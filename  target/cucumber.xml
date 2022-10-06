@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.475">
+    <testcase classname="Register" name="Enter empty value in email field" time="11.289">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given The user open the registration page...................................undefined
+When The user enter empty value in email field ""...........................skipped
+Then The system appear an error message "Please fill out this field"........skipped
+]]></failure>
+    </testcase>
+</testsuite>
