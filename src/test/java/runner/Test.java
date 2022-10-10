@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith (Cucumber.class)
 @CucumberOptions(features="src/test/java/features",glue= {"stepDefinition"},
 plugin= {"pretty","json:target/cucumber.json","junit: target/cucumber.xml"},
-tags = "@low1")
+tags = "@low3")
 
 public class Test {
 	@AfterClass

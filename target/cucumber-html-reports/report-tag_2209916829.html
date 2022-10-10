@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Feature: Register</title>
+<title>Cucumber Reports (no 1) - Tag: @low2</title>
 
 </head>
 <body>
@@ -52,7 +52,7 @@ $(document).ready(function() {
       <p class="navbar-text navbar-left">Cucumber Report</p>
       <ul class="nav navbar-nav navbar-right">
           <li role="presentation"><a href="../">Jenkins</a></li>
-          <li role="presentation"><a href="../../lastCompletedBuild/cucumber-html-reports/report-feature_1691701027.html">Latest results</a></li>
+          <li role="presentation"><a href="../../lastCompletedBuild/cucumber-html-reports/report-tag_2209916829.html">Latest results</a></li>
         <li role="presentation" ><a href="overview-features.html">Features</a></li>
         <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
         <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
@@ -78,7 +78,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Test Report</td>
         <td>1</td>
-      <td>10 Oct 2022, 15:32</td>
+      <td>08 Oct 2022, 22:59</td>
     </tr>
   </tbody>
 </table>
@@ -91,7 +91,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Feature Report</h2>
+    <h2>Tag Report</h2>
   </div>
 </div>
 
@@ -110,7 +110,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Feature</th>
+    <th>Tag</th>
     <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -130,20 +130,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Register</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+          <td class="tagname">@low2</td>
+          <td      class="passed"    >2</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">3</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">2</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="72696243700">1:12.696</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="157466200">0.157</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -169,41 +169,31 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="feature">
+      <div class="elements">
 
-<div class="tags indention">
-</div>
-
-
-<div class="brief failed">
-  <span class="keyword indention">Feature</span>
-  <span class="name">Register</span>
-
-
-</div>
-
-        <div class="description indention"></div>
-
-        <div class="elements inner-level">
 
 <div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1691701027.html">Register</a>
+    </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_1656737890.html">@not-implemented-yet</a>
-       <a href="report-tag_2209916830.html">@low3</a>
+       <a href="report-tag_2209916829.html">@low2</a>
 </div>
 
 
-  <span class="lead-duration duration">1:12.696</span>
+  <span class="lead-duration duration">0.157</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Enter invalid value password field</span>
+  <span class="name">Enter empty value in password field</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -212,7 +202,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -234,7 +224,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">stepDefinition.Steps.startdriver()</span>
 
-  <span class="lead-duration duration">4.005</span>
+  <span class="lead-duration duration">4.641</span>
 
           </div>
 
@@ -251,9 +241,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -263,15 +253,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">The user enter invalid value in password field <span class="argument">&quot;abc&quot;</span></span>
+  <span class="name">The user enter empty value in password field <span class="argument">&quot;&quot;</span></span>
 
-  <span class="lead-duration duration">9.615</span>
+  <span class="lead-duration duration">0.099</span>
 
 </div>
 
@@ -294,79 +284,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">checked agree terms of use and not robot button</span>
-
-  <span class="lead-duration duration">1:3.080</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;not a robot&quot;}
-  (Session info: chrome=106.0.5249.103)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'MAHMOUD', ip: '192.168.1.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c37e0e4ef7c26d4359015ee8338c1cc4, findElement {using=partial link text, value=not a robot}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51809}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51809/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c37e0e4ef7c26d4359015ee8338c1cc4
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
-	at stepDefinition.Steps.checked_agree_terms_of_use_and_not_robot_button(Steps.java:134)
-	at &#10045;.checked agree terms of use and not robot button(file:///C:/Users/hp/eclipse-workspace/UIpathProject/src/test/java/features/Register.feature:28)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">The system appear an error message3 <span class="argument">&quot;The password must be at least 8 characters&quot;</span></span>
+  <span class="name">The system appear an error message2 <span class="argument">&quot;Please fill out this field&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.057</span>
 
 </div>
 
@@ -393,7 +315,7 @@ Session ID: c37e0e4ef7c26d4359015ee8338c1cc4
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -405,13 +327,13 @@ Session ID: c37e0e4ef7c26d4359015ee8338c1cc4
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">stepDefinition.Steps.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">5.455</span>
+  <span class="lead-duration duration">6.182</span>
 
           </div>
 
@@ -420,21 +342,6 @@ Session ID: c37e0e4ef7c26d4359015ee8338c1cc4
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1535315585.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1535315585.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -443,7 +350,6 @@ Session ID: c37e0e4ef7c26d4359015ee8338c1cc4
   </div>
 </div>
 
-        </div>
 
       </div>
     </div>

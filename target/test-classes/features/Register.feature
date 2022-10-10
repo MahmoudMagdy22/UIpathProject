@@ -1,6 +1,6 @@
 Feature: Register
 
-@not-implemented-yet
+@implemented
 @low1 
  Scenario Outline:  Enter empty value in email field
     Given  The user open the registration page
@@ -12,22 +12,21 @@ Feature: Register
       |                 | Please fill out this field  | 
 
 @not-implemented-yet
-@low 
+@low2
 Scenario Outline:  Enter empty value in password field
-    Given  The user open the registration page
     When   The user enter empty value in password field "<password>"
-    Then   The system appear an error message "<error message>"
+    Then   The system appear an error message2 "<error message>"
 
     Examples: 
       | password           | error message               | 
       |                    | Please fill out this field  | 
 
 @not-implemented-yet 
-@low 
+@low3
 Scenario Outline:  Enter invalid value password field
-    Given  The user open the registration page
     When   The user enter invalid value in password field "<password>"
-    Then   The system appear an error message "<error message>"
+    And checked agree terms of use and not robot button
+    Then   The system appear an error message3 "<error message>"
 
     Examples: 
       | password           | error message               | 

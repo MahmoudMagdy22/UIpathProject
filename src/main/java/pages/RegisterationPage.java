@@ -10,12 +10,56 @@ public class RegisterationPage extends PageBase{
 		super(driver);
 	}
 	
-	@FindBy(xpath="")
+	@FindBy(linkText="Register")
 	WebElement registeration;
 	
 	public WebElement registeration () {
 		return registeration;
 	}
+	
+	@FindBy(id="email")
+	WebElement email;
+	public WebElement email() {
+		return email;
+	}
+	
+	@FindBy(xpath="//*[@type='submit']")
+	WebElement submit;
+	
+	public WebElement submit() {
+		return submit;
+	}
+	
+	@FindBy(xpath="//*[@id='password']")
+	WebElement password;
+	public WebElement password() {
+		return password;
+	}
+	@FindBy(id="password-confirm")
+	WebElement confirmpassword;
+	public WebElement confirmpassword() {
+		return confirmpassword;
+	}
+	@FindBy(xpath="//*[@name='checkTerms']")
+	WebElement useterms;
+	
+	public WebElement useterms() {
+		return useterms;
+	}
+	
+	@FindBy(partialLinkText="not a robot")
+	WebElement robotcheck;
+	public WebElement robotcheck() {
+		return robotcheck;
+	}
+	
+	@FindBy(xpath="//*[@role='alert']//strong")
+	WebElement passnote;
+	
+	public WebElement passnote() {
+		return passnote;
+	}
+	
 	
 
 }
