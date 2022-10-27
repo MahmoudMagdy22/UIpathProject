@@ -1,25 +1,25 @@
 Feature: Dashboard
  
 @not-implemented-yet
-@low     
+@dash1    
 Scenario:  Check the page title 
-    Given  The user open the dashboard page
-    Then   The page title should be is "ACME System 1 -  Dashboard"
+    Given  Opened the dashboard page
+    Then   The page title should be as following "ACME System 1 -  Dashboard"
 
 @not-implemented-yet
-@medium     
+@dash2    
 Scenario:  Check the Copyright year
     Given  The user open the dashboard page
     Then   The Copyright year should be the actual year
 
 @not-implemented-yet
-@medium     
+@dash3    
 Scenario:  Check the label text 
     Given  The user open the dashboard page
-    Then   The label text should be is "Dashboard" and "Welcome, " plus "s.mahallel9999@gmail.com" plus " to System 1."
+    Then   The label text should be is "Dashboard" and "Welcome, " plus "mmagdy2275@gmail.com" plus " to System 1."
 
 @not-implemented-yet   
-@important 
+@dash4 
 Scenario Outline:  Check the buttons text and tool tip
     Given  The user open the dashboard page
     When   The user just view the dashboard
@@ -51,7 +51,7 @@ Scenario Outline:  Check the buttons text and tool tip
       | Customer Service    |                              |                              |                             |                            |                      |                    |                      |                     |                     |
       
 @not-implemented-yet   
-@important 
+@dash5 
 Scenario Outline:  Check the buttons redirect to other page
     Given  The user open the dashboard page
     When   The user clicks on the specific button "<button text>"
@@ -64,7 +64,7 @@ Scenario Outline:  Check the buttons redirect to other page
       | Customer Service    | callcenter
       
 @not-implemented-yet      
-@important 
+@dash6
 Scenario:   Check the logout link
     Given   The user open the dashboard page
     When    The user clicks on the logout link
@@ -72,14 +72,14 @@ Scenario:   Check the logout link
     And     The system redirect to the login page
 
 @not-implemented-yet
-@medium 
+@dash7
 Scenario:   Check the home link
     Given   The user open the dashboard page
     When    The user clicks on the home link
     Then    The system do nothing
 
 @not-implemented-yet   
-@medium 
+@dash8
 Scenario:   Check the switch to old theme link
     Given   The user open the dashboard page
     When    The user clicks on the Switch to old theme link

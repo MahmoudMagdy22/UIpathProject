@@ -1,13 +1,13 @@
 Feature: Work Item
 
 @not-implemented-yet
-@Autom  
+@work1 
 Scenario:  Check the items of type WI3 
     Given  The user open the Work Items
     And    check that only 4 items of type "WI3" is presented
     
 @not-implemented-yet
-@medium     
+@work2   
 Scenario:  Check that item details shows the right values
     Given  The user open the Work Items
     And    Choose a random item and save the data of random item

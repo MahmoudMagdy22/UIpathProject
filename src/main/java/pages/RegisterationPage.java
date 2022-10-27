@@ -17,7 +17,7 @@ public class RegisterationPage extends PageBase{
 		return registeration;
 	}
 	
-	@FindBy(id="email")
+	@FindBy(xpath="//*[@id='email']")
 	WebElement email;
 	public WebElement email() {
 		return email;
@@ -46,19 +46,42 @@ public class RegisterationPage extends PageBase{
 	public WebElement useterms() {
 		return useterms;
 	}
+		
 	
-	@FindBy(partialLinkText="not a robot")
+	@FindBy(id="recaptcha-anchor-label")
 	WebElement robotcheck;
 	public WebElement robotcheck() {
 		return robotcheck;
 	}
 	
-	@FindBy(xpath="//*[@role='alert']//strong")
+	
+	@FindBy(xpath="//strong[normalize-space()='The password must be at least 8 characters.']")
 	WebElement passnote;
 	
 	public WebElement passnote() {
 		return passnote;
 	}
+		@FindBy(xpath="//*[@role='alert']")
+		WebElement matchpassword;
+		
+		public WebElement matchpassword() {
+			return matchpassword;
+		}
+		
+		@FindBy(xpath="//p[1]")
+		WebElement copyrights;
+		
+		public WebElement copyrights() {
+			return copyrights;
+		}
+		
+		@FindBy(xpath="//*[normalize-space()='Register by filling the below questionnaire.']")
+		WebElement pagetitle;
+		
+		public WebElement pagetitle() {
+			return pagetitle;
+		}
+	
 	
 	
 
